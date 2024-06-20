@@ -1,0 +1,553 @@
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding box-shadow */
+}
+
+.logo {
+    width: 140px;
+}
+
+/* Navigation Styles */
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items > ul > li {
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.nav-items > ul > li:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: red;
+}
+
+/* Restaurant Card Styles */
+.res-card {
+    margin: 10px;
+    padding: 15px;
+    width: 600px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.res-card:hover {
+    border: 1px solid #000;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+/* Restaurant Image Styles */
+.res-logo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Restaurant Container Styles */
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Search Box Styles */
+.search {
+    padding: 10px 20px;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Restaurant Details */
+.res-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.res-card h4 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* Restaurant Card Styles */
+.res-card {
+    margin: 10px;
+    padding: 10px;
+    width: 240px; /* Reduced width */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.res-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+/* Restaurant Image Styles */
+.res-logo {
+    width: 100%;
+    height: 150px; /* Reduced height */
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Restaurant Details */
+.res-card h3 {
+    margin: 5px 0;
+    font-size: 16px; /* Smaller font size */
+    color: #333333;
+}
+
+.res-card h4 {
+    margin: 3px 0;
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Restaurant Rating */
+.res-rating {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.res-rating img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.res-rating span {
+    font-size: 14px;
+    color: #666666;
+}
+
+
+.filter-btn {
+    margin: 50px;
+    padding: 10px;
+}
+
+.res-card {
+    margin: 10px;
+    padding: 10px;
+    width: 300px; /* Increased width */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.res-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.res-logo {
+    width: 100%;
+    height: 180px; /* Increased height */
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.res-card h3 {
+    margin: 5px 0;
+    font-size: 18px; /* Increased font size */
+    color: #333333;
+}
+
+.res-card h4 {
+    margin: 3px 0;
+    font-size: 16px; /* Increased font size */
+    color: #666666;
+}
+
+
+/* App.css */
+
+/* Apply basic styling to ensure full viewport height */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure app takes full viewport height */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure header appears above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding box-shadow for a subtle effect */
+}
+
+.body {
+    flex: 1; /* Allow body to expand and fill remaining space */
+    padding-top: 70px; /* Adjust padding to accommodate fixed header height */
+    overflow-y: auto; /* Allow body content to scroll */
+}
+
+
+.shimmer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shimmer {
+    width: 280px; /* Adjust width as per your card width */
+    height: 180px; /* Adjust height as per your card height */
+    margin: 10px;
+    background-color: #e5e7e8; /* Shimmer color */
+    animation: shimmer 2s infinite linear; /* Animation duration and type */
+    border-radius: 8px; /* Rounded corners */
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.searchfield {
+    padding: 10px;
+    width: 60%; /* Set width to 100% to fill its container */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
+.search-btn {
+    padding: 10px;
+    margin: 10px;
+}
+
+.carousel-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    height: auto;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    margin-left: 120px;
+    margin-right: 142px;
+   
+
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar for Webkit browsers */
+}
+
+.carousel {
+    text-align: center;
+    padding: 15px 0; /* Adjusted padding to remove left and right padding */
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.carousel::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Centered at 50% of the parent width */
+    transform: translateX(-50%);
+    width: 81%; /* Adjusted width to control the width of the border */
+    border-bottom: 1px solid lightgrey; /* Border styles */
+}
+
+
+.carousel img {
+    margin: 0 10px;
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.10);
+}
+
+/* Adjusting the space between search box and heading */
+.search-container {
+    margin-bottom: 10px; /* Reduced space */
+}
+
+.carousel h1 {
+    margin: 10px 0; /* Reduced margin to move heading up */
+    margin-left: 10px;
+}
+
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Add margin-top to move the filter section down */
+    padding: 10px;
+    gap: 10px; /* Add gap between elements */
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 10px; /* Adjust margin to move it down a bit */
+    background-color: #f8893f;;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.filter-btn:hover {
+    background-color: #fc6000;
+}
+
+.searchfield {
+    padding: 10px;
+    width: 60%; /* Adjust width as needed */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    margin-top: 50px; /* Adjust margin to move it down a bit */
+}
+
+.search-btn {
+    padding: 10px 10px;
+    margin: 15px; /* Adjust margin to move it down a bit */
+    background-color: #f8893f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.search-btn:hover {
+    background-color: #eb5312;
+}
+
+
+.ShimmerCarousel{
+    width : 100%;
+    height: auto ;
+    background-color: #dd1111;
+}
+
+.res-container-heading{
+    margin-top: 48px;
+    margin-left: 170px;
+}
+
+.carousel-heading{
+    margin-left: -1370px;
+}
+
+.restaurantmenu{
+    margin-top: 150px;
+}
+
+/* RestaurantMenu.css */
+
+.restaurantmenu {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.restmenudata {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.restmenudata p {
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.restmenudata h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff6f00;
+}
+
+.restmenucard {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.restmenucard h3 {
+    margin-top: 0;
+    color: #ff6f00;
+    font-size: 18px;
+}
+
+.restmenucard h4 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.restmenuOffers {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.restmenuOffers h3 {
+    margin-top: 0;
+    color: #ff6f00;
+    font-size: 18px;
+}
+
+.bankoffers {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.offers {
+    flex: 1 1 calc(25% - 10px);
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offers img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.offers h5 {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.offers p {
+    font-size: 12px;
+    color: #777;
+}
+
+.resMenuFoodItems {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.resMenuFoodItems ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resMenuFoodItems li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.resMenuFoodItems li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.resMenuFoodItems li p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.resMenuFoodItems li p:nth-child(2) {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .bankoffers {
+        flex-direction: column;
+    }
+
+    .offers {
+        flex: 1 1 100%;
+    }
+
+    .resMenuFoodItems li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .resMenuFoodItems li img {
+        margin-bottom: 10px;
+    }
+}
